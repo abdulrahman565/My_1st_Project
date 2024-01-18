@@ -1,0 +1,1226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #010103;
+    letter-spacing: 1px;
+}
+
+
+/*---------------------------------------- header style starts ---------------------------------------------------------*/
+
+.header {
+    overflow: auto;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 4.5rem;
+    background: rgba(1, 1, 3, .8);
+    /* border-bottom: 1.6px solid rgba(255, 255, 255, .3); */
+}
+
+.header  .img-logo {
+    float: left;
+    height: 100%;
+}
+
+.header  .img-logo .logo img {
+    width: 80px;
+    height: 65px;
+    margin-left: 80px;
+}
+
+.list {
+    float: left;
+    margin-left: 190px;
+    list-style-type: none;
+}
+
+.list li {
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 25px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.list li::after {
+    position: absolute;
+    content: ' ';
+    width: 0;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: #9514fb;
+    border-radius: 1.5px;
+    transition: 0.7s;
+}
+
+.list li:hover::after {
+    width: 100%;
+}
+
+.list li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+
+.list li a:hover {
+    color: #fff;
+}
+
+.header-btn {
+    float: right;
+    margin: 20px 70px 0 20px; 
+}
+
+.header-btn button {
+    padding: 8px 29px;
+    background-color: rgba(255, 255, 255, .1);
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.header-btn button::after {
+    position: absolute;
+    content: ' ';
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color:rgba(255, 255, 255, .2);
+    transition: 0.7s;
+}
+
+.header-btn button:hover::after {
+    width: 100%;
+}
+
+/* ------------------------------------------------- header style ends ---------------------------------------------------- */
+
+
+/* -------------------------------------------------- home style starts --------------------------------------------------- */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/Home.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;  /* relative for all children */   
+}
+
+.home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.home-content {
+    width: 80%;
+    height: 150px;
+    /* background-color: rgb(9, 100, 70); */
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 1st value width, 2nd value hight */   
+    text-align: center; 
+}
+
+.home-content-header {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.home-content-header span {
+    color: #9514fb;
+    transition: 0.6s;
+}
+
+.home-content-paragraph {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.home-content-btn {        
+    width: 12rem;
+    height: 3.4rem;
+    border-radius: 1.3rem;
+    border: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    transition: 0.7s;
+}
+
+.btn2 {
+    background-color: #9514fb;
+}
+
+.btn1:hover{
+    background-color: rgba(255, 255, 255, .3); /* we can use opacity instead */
+
+}
+
+.btn2:hover {
+    background-color: #ab4ff1
+}
+
+/* ---------------------------------------------------- home style ends ------------------------------------------------------- */
+
+
+/* ---------------------------------------------------- welcome style starts ---------------------------------------------------- */
+
+.welcome {
+    width: 100%;
+    height: 90vh;
+    /* background-color: #b25050; */
+}
+
+.welcome .welcome-h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 38%;
+    padding-top: 120px;
+}
+
+.welcome .welcome-h2 span {
+    color: #9514fb;
+}
+
+.welcome .line {
+    width: 120px;
+    height: 4px;
+    background-color: #9514fb;
+    margin: 4px  0px 100px 45%;
+    border-radius: 3px;
+}
+
+.welcome-container {
+    width: 90%;
+    margin: auto;
+}
+
+.welcome-container-div1 {
+    width: 350px;
+    height: 250px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    border-radius: 15px;
+    text-transform: capitalize;
+    margin: 10px 50px 0px 20px;
+    float: left;
+    border: .1px solid rgba(255, 255, 255, .3);
+    text-align: center;
+    position: relative;
+    transition: .7s;
+}
+
+.welcome-container .div1 {
+    margin-left: 80px;
+}
+
+.welcome-container-div1:hover {
+    border: .03px solid rgba(255, 255, 255, .55);
+}
+
+.welcome-container-div1 i {
+    position: absolute;
+    top: 20px;
+    left: 155px;
+    font-size: 2.2rem;
+    color: #9514fb;
+}
+
+.welcome-container-div1 h3{
+    margin-top: 75px;
+    font-size: 1.6rem;
+    font-weight: 550;
+    color: #fff;
+}
+
+.welcome-container-div1 p {
+    margin: 15px 0px;
+    font-size: 1rem;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.welcome-container-div1 a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 550;
+    transition: 0.5s;
+}
+
+.welcome-container-div1 a:hover {
+    color: #9514fb;
+    
+}
+
+.welcome-container-div1::after {
+    position: absolute;
+    content: " ";
+
+    border-radius: 15px;
+
+    width: 0;
+    height: 0;
+
+    bottom: 0;
+    left: 0;   /* For coordination only */
+    z-index: -1;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border: .1px solid rgba(255, 255, 255, .9);
+
+    opacity: 0;
+    transition: 1.2s;
+}
+
+.welcome-container-div1:hover::after {
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ---------------------------------------------------- welcome style ends ---------------------------------------------------- */
+
+
+/* ---------------------------------------------------- feed-back style starts ---------------------------------------------------- */
+
+.feed-back {
+    /* background-color: beige; */
+    width: 100%;
+    height: 100vh
+}
+
+.feed-back h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 36%;
+    margin-top: 40px;
+}
+
+.feed-back h2 span {
+    color: #9514fb;
+}
+
+.feed-back .line {
+    width: 130px;
+    height: 4px;
+    background-color: #9514fb;
+    margin: 4px  0px 20px 42.5%;
+    border-radius: 3px;
+}
+
+.feed-back .feed-back-container {
+    width: 80%;
+    margin: auto;
+}
+
+.feed1 {
+    width: 300px;
+    height: 340px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    border-radius: 13px;
+    margin: 40px 70px 0px 20px;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    position: relative;
+    transition: .7s;
+}
+
+.feed-back-container .div1 {
+    margin-left: 20px;
+}
+
+.feed-image img {
+    width: 100%;
+    height: 340px;
+    border-radius: 13px;
+}
+
+.feed-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    z-index: 3;
+}
+
+.feed-image:hover .feed-image-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.feed-image a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.feed-image h3 {
+    margin-top: 110px;
+    font-size: 1.7rem;
+}
+
+.feed-image p {
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.feed-image .icon {
+    margin-top: 10px;
+}
+
+.feed-image .icon a {
+    color: #a434f9;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+/* ---------------------------------------------------- feed-back style ends ---------------------------------------------------- */
+
+
+/* -------------------------------------------------- choose-us style starts -------------------------------------------------- */
+
+.chose-us {
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: bisque; */
+    overflow: auto;
+}
+
+.chose-us .chose-us-h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 38%;
+    margin-top: 80px;
+}
+
+.chose-us .chose-us-h2 span {
+    color: #9514fb;
+}
+
+.chose-us .line {
+    width: 120px;
+    height: 4px;
+    background-color: #9514fb;
+    margin: 4px  0px 20px 45%;
+    border-radius: 3px;
+}
+
+.chose-us-container {
+    float: left;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 180px;
+    margin-right: 20px;
+}
+
+.chose-us-container p {
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+}
+
+.chose-us-container .chose-us-ul {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 45px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.chose-us-container .chose-us-ul li {
+    line-height: 30px;
+}
+
+.chose-us-container .chose-us-ul i {
+    color: #9514fb;
+    margin-right: 5px;
+}
+
+.chose-us-img {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.chose-us-img img {
+    margin-right: 120px;
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
+.chose-us-img .none {
+    list-style: none;
+    margin:10px 0 0 33%;
+}
+
+.chose-us-img .none li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.chose-us-img .none .li-1 {
+    background-color: #9514fb;
+}
+
+.chose-us-img .none .li-2:hover {
+    background-color: rgba(149, 20, 251, 0.6);
+}
+
+/* ----------------------------------------------choose-us style ends -------------------------------------------------------------*/
+
+
+/*---------------------------------------------- our-offer style starts ----------------------------------------------------------*/
+
+.offer {
+    width: 100%;
+    height: 100vh;
+    /* background-color: wheat; */
+    overflow: auto;
+}
+
+.offer h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 41%;
+    margin-top: 40px;
+}
+
+.offer h2 span {
+    color: #9514fb;
+}
+
+.offer .line {
+    width: 100px;
+    height: 4px;
+    background-color: #9514fb;
+    margin: 4px  0px 20px 46.5%;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+.offer-container {
+    width: 80%;
+    margin: auto;
+}
+
+.offer-div1-box1 {
+    width: 320px;
+    height: 230px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    border-radius: 13px;
+    margin: 40px 50px 0px 10px;
+    float: left;
+    border: .1px solid rgba(255, 255, 255, .3);
+    text-align: center;
+    position: relative;
+    transition: .7s;
+}
+
+/* .offer-div1-box1:hover {
+    border: .1px solid rgba(255, 255, 255, .5);
+} */
+
+.offer-container .div1 {
+    margin-left: 50px;
+}
+
+.offer-div1-box1 i {
+    position: absolute;
+    top: 33px;
+    left: 16px; 
+    font-size: 1.4rem;
+    color: #9514fb;
+}
+
+.offer-div1-box1 h3{
+    margin: 30px 0px 25px 0px;
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: #fff;
+}
+
+.offer-div1-box1 p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.offer-div1-box1 a {
+    margin-top: 30px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 550;
+    transition: 0.5s;
+}
+
+.offer-div1-box1 a:hover {
+    color: #9514fb;
+    
+}
+
+.offer-div1-box1::after {
+    position: absolute;
+    content: " ";
+
+    border-radius: 15px;
+
+    width: 0;
+    height: 0;
+
+    bottom: 0;
+    left: 0;   /* For coordination only */
+    z-index: -1;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border: .1px solid rgba(255, 255, 255, .9);
+
+    opacity: 0;
+    transition: 1.2s;
+}
+
+.offer-div1-box1:hover::after {
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------------------------------------- our-offer style ends ------------------------------------------------------------*/
+
+
+/*---------------------------------------------- icons style starts --------------------------------------------------------------*/
+
+.icons {
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/icons-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    position: relative;
+    /* height: 100vh; */
+}
+
+.icons .icons-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.icons-container {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+}
+
+.all-container-icons {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    /* background-color: #fff; */
+    overflow: auto;
+}
+
+.all-container-icons .icon1 {
+    width: 250px;
+    height: 200px;
+    float: left;
+    text-align: center;
+    /* background-color: blue; */
+    margin-top: 70px;
+    margin-left: 35px;
+    text-transform: capitalize;
+}
+
+.all-container-icons .icon1 span i {
+    font-size: 3rem;
+    padding: 20px 0px;
+    color: #9514fb;
+}
+
+.all-container-icons .icon1 h3 {
+    padding: 20px 0px;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.all-container-icons .icon1 p {
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: #fff;
+}
+
+/*---------------------------------------------- icons style ends --------------------------------------------------------------*/
+
+
+/*------------------------------------------ Pricing Table style ends ---------------------------------------------------------*/
+
+.Pricing {
+    width: 100%;
+    height: 100vh;
+}
+
+.Pricing h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 38%;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+
+.Pricing h2 span {
+    color: #9514fb;
+}
+
+.Pricing .line {
+    width: 130px;
+    height: 4px;
+    background-color: #9514fb;
+    margin: 4px  0px 50px 45%;
+    border-radius: 3px;
+}
+
+.pricing-container {
+    width: 90%;
+    margin: auto;
+}
+
+.all-cards .card1 {
+    background-color: rgba(255, 255, 255, .04);
+    float: left;
+    width: 348px;
+    height: 398px;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 30px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.all-cards .card1::after {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .09);
+    border-radius: 30px;
+    z-index: -1;
+    transition: 0.7s;
+}
+
+.all-cards .card1:hover::after {
+    height: 100%;
+}
+
+.all-cards .card1 p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 650;
+    margin: 15px 0;
+}
+
+.all-cards .card1 .price {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 3px solid #9514fb;
+    margin: 20px auto;
+}
+
+.all-cards .card1 .price h3 {
+    font-size: 30px;
+    padding-top: 15px;
+    color: #c58bf0;
+}
+
+.all-cards .card1 .price span {
+    display: block;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.all-cards .card1 .feature {
+    color: #fff;
+    list-style: none;
+    line-height: 28px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 70px;
+    font-size: 17px;
+}
+
+.all-cards .card1 .feature i {
+    color: #9514fb;
+    margin-right: 5px;
+}
+
+.all-cards .card1 .btn {
+    padding: 5px 30px;
+    background-color: #9514fb;
+    border: 1px solid #9514fb;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+.all-cards .card1 .btn:hover {
+    padding: 7px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid white;
+    color: #9514fb;
+}
+
+/*---------------------------------------------- Pricing Table style ends ------------------------------------------------------*/
+
+
+/*---------------------------------------------- sec-icons style starts ------------------------------------------------------*/
+
+.sec-icons {
+
+    width: 100%;
+    height: 340px;
+    background-image: url(../images/sec-icon-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    position: relative;
+    /* height: 100vh; */
+}
+
+.sec-icons-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.sec-icons-container {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+}
+
+.all-container-sec-icons {
+    color: #fff;
+    width: 70%;
+    height: 90%;
+    margin: auto;
+    /* background-color: #fff; */
+    overflow: auto;
+}
+
+.all-container-sec-icons .sec-icon {
+    width: 450px;
+    height: 200px;
+    float: left;
+    text-align: center;
+    /* background-color: blue; */
+    margin-top: 70px;
+    margin-left: 35px;
+    text-transform: capitalize;
+}
+
+.sec-icon {
+    /* background-color: aqua; */
+    margin-right: 30px;
+    position: relative;
+}
+
+.sec-icon img {
+    position: absolute;
+    border-radius: 50%;
+    top: 15px;
+    left: 10px;
+    /* border: 3px solid #9514fb; */
+}
+
+.sec-icon h2 {
+    margin-top: 35px;
+    margin-left: 60px;
+}
+
+.sec-icon h3 {
+    line-height: 35px;
+    margin-left: 70px;
+    color: #9514fb;
+}
+
+.sec-icon p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 30px;
+}
+
+/*---------------------------------------------- sec-icons style ends ------------------------------------------------------*/
+
+
+/*---------------------------------------------- team style starts ------------------------------------------------------*/
+
+.team {
+    width: 100%;
+    height: 90vh;
+    /* background-color: #b25050; */
+}
+
+.team .team-h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 45%;
+    margin-top: 10px;
+    padding-top: 50px;
+}
+
+.team .team-h2 span {
+    color: #9514fb;
+}
+
+.team .line {
+    width: 65px;
+    height: 4px;
+    background-color: #9514fb;
+    margin: 4px  0px 40px 47.5%;
+    border-radius: 3px;
+}
+
+.team-container {
+    width: 90%;
+    margin: auto;
+}
+
+.team-container-div1 {
+    width: 350px;
+    height: 390px;
+    background-color: rgba(255, 255, 255, 0.02);
+    text-transform: capitalize;
+    margin: 40px 50px 0px 20px;
+    float: left;
+    /* border: .05px solid rgba(255, 255, 255, .3); */
+    text-align: center;
+    position: relative;
+    transition: .7s;
+}
+
+.team-container-div1::after {
+    position: absolute;
+    content: " ";
+
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;   /* For coordination only */
+
+    background-color: #9514fb;
+    z-index: -1; /*  the better way is z-index:-1; to do the effect after under all the content */
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.team-container-div1:hover:after {
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+.team-container .div1 {
+    margin-left: 80px;
+}
+
+.team-image {
+    width: 320px;
+    height: 280px;
+    margin: auto;
+    position: relative;
+    
+    transition: 0.7s;
+}
+
+
+
+.team-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    z-index: 3;
+}
+
+.team-image:hover .team-image-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-image .team-image-overlay a {
+    display: block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    background-color: #9514fb;
+    color: #fff;
+    font-size: 2.3rem;
+    margin-left: auto; 
+}
+
+.team-image .team-image-overlay a i {
+    line-height: 45px;
+}
+
+.team-info {
+    margin-top: 30px;
+}
+
+/* this is another way but difficult the better way is z-index:-1; */
+
+/* .team-info {
+    position: absolute;
+    left: 20px;
+    margin: auto;
+    z-index: 3;
+}
+
+.Mark {
+    left: 35px;                     
+}
+
+.Mary {
+    left: 47px;
+} */
+
+.team-container-div1 .team-info h2 {
+    color: #fff;
+    margin-top: 15px;
+}
+
+.team-container-div1 .team-info p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 5px;
+    
+}
+
+/*---------------------------------------------- team style ends ------------------------------------------------------*/
+
+
+/*-------------------------------------------- recent style starts ----------------------------------------------------*/
+
+.recent {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #b25050; */
+}
+
+.recent-container {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+}
+
+.recent-container .div1 {
+    margin-left: 80px;
+}
+
+.recent .recent-h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 41.5%;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.recent .recent-h2 span {
+    color: #9514fb;
+}
+
+.recent .line {
+    width: 95px;
+    height: 4px;
+    background-color: #9514fb;
+    margin: 4px  0px 30px 46.5%;
+    border-radius: 3px;
+}
+
+.news1 {
+    width: 350px;
+    height: 540px;
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 15px;
+    text-transform: capitalize;
+    margin: 40px 50px 0px 20px;
+    float: left;
+    /* border: .05px solid rgba(255, 255, 255, .3); */
+    /* text-align: center; */
+    position: relative;
+    transition: .7s;
+}
+
+.news1 img {
+    border-radius: 15px;
+}
+
+.news1 .about {
+    margin: 15px 5px;
+}
+
+.news1 .about span {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 5px;
+}
+
+.news1 .about i {
+    color: #9514fb;
+    margin-left: 5px;
+}
+
+.news1 h2 {
+    color: #fff;
+    margin-left: 15px;
+}
+
+.news1 p {
+
+    color: rgba(255, 255, 255, 0.7);
+    margin: 15px 10px;
+    line-height: 20px;
+}
+
+.news1 .info a {
+    margin-left: 120px;
+    text-decoration: none;
+    color: #9514fb;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.news1::after {
+    position: absolute;
+    content: " ";
+
+    border-radius: 15px;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;   /* For coordination only */
+
+    background-color: #9514fb;
+    opacity: 0;
+    transition: 1s;
+}
+
+.news1:hover::after {
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+}
+
+/*-------------------------------------------- recent style ends ------------------------------------------------------*/
+
+
+/*-------------------------------------------- footer style starts ------------------------------------------------------*/
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.footer-container {
+    width: 50%;
+    margin: auto;
+}
+
+.footer-items {
+    text-align: center;
+    padding-top: 60PX;
+}
+
+.icons-footer {
+    margin: 20px;
+}
+
+.icons-footer ul {
+    list-style: none;
+}
+
+.icons-footer ul li {
+    display: inline-block;
+}
+
+.icons-footer ul li i {
+    font-size: 45px;
+    color: #9714fbf0;
+    transition: 0.7s;
+}
+
+.icons-footer ul li i:hover {
+    color: #b657ff;
+}
+
+.footer-items p {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*-------------------------------------------- footer style ends ------------------------------------------------------*/
+
